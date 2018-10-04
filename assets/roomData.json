@@ -1,22 +1,40 @@
 {
-    "rooms data": [
-                       {
-                           "id":1,"style":"Bedroom","image":"./images/room1.jpg","name":"abu raya"
-                       },
-                       {
-                           "id":2,"style":"Kitchen","image":"./images/room2.jpg","name":"abu raya"
-                       },
-                       {
-                           "id":3,"style":"Bedroom","image":"./images/room3.jpg","name":"abu raya"
-                       },
-                       {
-                           "id":4,"style":"Living room","image":"./images/room4.jpg","name":"abu raya"
-                       },
-                       {
-                           "id":5,"style":"Bedroom","image":"./images/room5.jpg","name":"abu raya"
-                       },
-                       {
-                           "id":6,"style":"Bedroom","image":"./images/room6.jpg","name":"abu raya"
-                       }
-                   ]
+  "rooms data": [
+    {
+      "id": 1,
+      "style": "Bedroom",
+      "image": "room1.jpg",
+      "name": "abu raya"
+    },
+    {
+      "id": 2,
+      "style": "Kitchen",
+      "image": "room2.jpg",
+      "name": "israa"
+    },
+    {
+      "id": 3,
+      "style": "Bedroom",
+      "image": "room3.jpg",
+      "name": "hasiba"
+    },
+    {
+      "id": 4,
+      "style": "Living room",
+      "image": "room4.jpg",
+      "name": "abu raya"
+    },
+    {
+      "id": 5,
+      "style": "Bedroom",
+      "image": "room5.jpg",
+      "name": "hasiba"
+    },
+    {
+      "id": 6,
+      "style": "Bedroom",
+      "image": "room6.jpg",
+      "name": "abu raya"
+    }
+  ]
 }
