@@ -16,7 +16,7 @@ function getData(url){
             alert("got timeout");
         }
         else
-        alert(status);
+            alert(status);
         
      }
   })
