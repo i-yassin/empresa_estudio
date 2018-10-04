@@ -4,37 +4,37 @@
       "id": 1,
       "style": "Bedroom",
       "image": "room1.jpg",
-      "name": "abu raya"
+      "name": "Kids Bedroom"
     },
     {
       "id": 2,
       "style": "Kitchen",
       "image": "room2.jpg",
-      "name": "israa"
+      "name": "First Kitchen"
     },
     {
       "id": 3,
       "style": "Bedroom",
       "image": "room3.jpg",
-      "name": "hasiba"
+      "name": "Girls Bedroom"
     },
     {
       "id": 4,
       "style": "Living room",
       "image": "room4.jpg",
-      "name": "abu raya"
+      "name": "Common Living Room"
     },
     {
       "id": 5,
       "style": "Bedroom",
       "image": "room5.jpg",
-      "name": "hasiba"
+      "name": "King Size Bedroom"
     },
     {
       "id": 6,
       "style": "Bedroom",
       "image": "room6.jpg",
-      "name": "abu raya"
+      "name": "Boy's Bedroom"
     }
   ]
 }
