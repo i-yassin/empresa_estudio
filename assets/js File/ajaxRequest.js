@@ -15,6 +15,8 @@ function getData(url){
         if(status==="timeout") {
             alert("got timeout");
         }
+        else
+        alert(status);
         
      }
   })
