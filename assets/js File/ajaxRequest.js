@@ -1,23 +1,22 @@
-
+const requestTimeOut = 1000*5;
 
 function getData(url){
-    var roomsData;
-    
-  $.getJSON( url, {
-    tags: "Rooms",
-    tagmode: "any",
-    format: "json",
-    timeout:10000,
-    success: function(resp) { 
-        alert("its loaded fine ");
-    },
-    error: function(req, status,error) {
-        if(status==="timeout") {
-            alert("got timeout");
-        }
-        else
-            alert(status);
-        
-     }
-  })
+  $.ajax({
+      url:url,
+      dataType: 'json',
+      timeout: requestTimeOut,
+      success: function(resp) { 
+        if(resp.status == true) {
+            alert("its loaded fine");
+          }
+        },
+        error: function(req, status,error) {
+            if(status==="timeout") {
+                alert("got timeout");
+                
+            }
+            else
+                console.log(status);
+         }
+  });
 }
