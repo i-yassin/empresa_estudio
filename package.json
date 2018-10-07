@@ -1,0 +1,26 @@
+{
+  "name": "taskstuff",
+  "version": "1.0.0",
+  "description": "its task that include everything to prepere me to react ",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-less": "^2.0.0",
+    "gulp-less": "^4.0.1",
+    "less": "^3.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-yassin/empresa_estudio.git"
+  },
+  "author": "Ibrahem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-yassin/empresa_estudio/issues"
+  },
+  "homepage": "https://github.com/i-yassin/empresa_estudio#readme"
+}
