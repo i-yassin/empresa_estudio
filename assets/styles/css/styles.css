@@ -9,6 +9,10 @@
   padding: 10px;
   justify-content: center;
 }
+.imageSize {
+  width: 200px;
+  height: 200px;
+}
 #logo {
   padding: 5px;
   display: flex;
