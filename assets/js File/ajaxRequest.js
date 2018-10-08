@@ -1,8 +1,7 @@
 const requestTimeOut = 1000*5;
-
 function getData(url){
   $.ajax({
-      url:url,
+      url: "https://api.myjson.com/bins/r9n80",
       dataType: 'json',
       timeout: requestTimeOut,
       success: function(resp) { 
@@ -14,10 +13,10 @@ function getData(url){
         error: function(req, status,error) {
             if(status==="timeout") {
                 alert("got timeout");
-                
             }
-            else
+            else{
                 console.log(status);
+            }
          }
   });
 }
