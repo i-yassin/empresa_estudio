@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <title>Task</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
   <script src="assets/js File/ajaxRequest.js"></script>
+  <script src="assets/js File/modal-control.js"></script>
+
   <link rel="stylesheet" href="assets/styles/css/styles.css">
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -37,98 +40,41 @@
       estudio
     </div>
     <div class="filtring-area-contiener row text-center">
-        <div class="icon-container">
-          <img class="icon" src="./assets/images/icons/filter-icon.png"/>
-        Filtring Images
+      <div class="icon-container">
+        <img class="icon" src="./assets/images/icons/filter-icon.png"/>
+          Filtring Images
       </div>
       <div class="filter-bar-container">
-          <ul>
-            <li><input type="checkbox" name="id" value="id"/>filter on id
-            <input type="checkbox" name="style" value="style"/>filter on style</li>
+        <ul>
+          <li>
+            <input type="checkbox" name="id" value="id"/>filter on id
+            <input type="checkbox" name="style" value="style"/>filter on style
+          </li>
         </ul>
       </div>
     </div>
   </div>
 
-      <div class="container-fluid content-body">        
-          <div class="row text-center text-lg-left ">
-    
-
-
-            <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
-                <div class="imagestyle">
-                  <img class="img-fluid  " src="./assets/images/room1.jpg"/>
-                  <div class="overlay">
-                      <div class="text">Hello World</div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
-              <div class="imagestyle">
-                <img class="img-fluid  " src="./assets/images/room1.jpg"/>
-                <div class="overlay">
-                    <div class="text">Hello World</div>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
-            <div class="imagestyle">
-              <img class="img-fluid  " src="./assets/images/room1.jpg"/>
-              <div class="overlay">
-                  <div class="text">Hello World</div>
-              </div>
-            </div>
-        </div>
+  <div class="container-fluid content-body">        
+      <div class="row text-center text-lg-left ">
         <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
           <div class="imagestyle">
-            <img class="img-fluid  " src="./assets/images/room1.jpg"/>
+            <img class="img-fluid"src="./assets/images/room1.jpg"alt="room 1"onclick="appearingModal(this)"/>
             <div class="overlay">
-                <div class="text">Hello World</div>
+                <div class="text">
+                  Hello World
+                </div>
             </div>
           </div>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
-        <div class="imagestyle">
-          <img class="img-fluid  " src="./assets/images/room1.jpg"/>
-          <div class="overlay">
-              <div class="text">Hello World</div>
-          </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
-      <div class="imagestyle">
-        <img class="img-fluid  " src="./assets/images/room1.jpg"/>
-        <div class="overlay">
-            <div class="text">Hello World</div>
         </div>
       </div>
-  </div>
-  <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
-    <div class="imagestyle">
-      <img class="img-fluid  " src="./assets/images/room1.jpg"/>
-      <div class="overlay">
-          <div class="text">Hello World</div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4 col-lg-3 image-container ">
-    <div class="imagestyle">
-      <img class="img-fluid  " src="./assets/images/room1.jpg"/>
-      <div class="overlay">
-          <div class="text">Hello World</div>
-      </div>
-    </div>
-  </div>
-        
-          
-        
-      
-
-
-
+      <div id="myModal" class="modal">
+        <div class="model-container">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
-          
-
+      </div>         
   </div>
 </body>
 </html>
