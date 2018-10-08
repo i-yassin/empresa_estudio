@@ -12,7 +12,7 @@ const requestTimeOut = 1000*5;
                 $('#where-image-appear').append(
                 '<div class="col-sm-6 col-md-4 col-lg-3 image-container " >'+
                     '<div class="imagestyle" >'+
-                        '<img src="./assets/images/'+room.image+'"  class="img-fluid image-filteration" alt="'+room.name+'" onclick="appearingModal(this)"/>'+  
+                        '<img src="./assets/images/'+room.image+'"  class="img-fluid image-filteration image-zoom" alt="'+room.name+'" onclick="appearingModal(this)"/>'+  
                         '<div class="overlay">'+
                             '<div class="text">'+
                             room.name+
