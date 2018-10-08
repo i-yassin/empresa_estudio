@@ -1,5 +1,6 @@
 {
-  "rooms data": [
+  "status": true,
+  "roomsData": [
     {
       "id": 1,
       "style": "Bedroom",
