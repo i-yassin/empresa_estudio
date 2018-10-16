@@ -13,7 +13,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!-- files added-->
-    <script src="assets/js File/ajaxRequest.js"></script>
+    <script src="assets/js/ajaxRequest.js"></script>
+    <script src="assets/js/modal_control.js"></script>
     <link rel="stylesheet" href="assets/style/css/style.css">
 
 </head>
@@ -40,34 +41,35 @@
         <div class= "container-fluid body-container">
             <div class= "row text-center text-lg-left rooms-container" id="where-image-appear">
                 <!-- here the image will appear -->
-                <div class= "col-sm-6 col-md-4 col-lg-3 image-container" >
-                <div class= "imagestyle">
-                    <img src= "./assets/images/room1.jpg" class= "img-fluid image-filteration image-zoom"/> 
-                </div>
-                </div>
-                <div class= "col-sm-6 col-md-4 col-lg-3 image-container" >
-                <div class= "imagestyle">
-                    <img src= "./assets/images/room1.jpg" class= "img-fluid image-filteration image-zoom"/> 
-                </div>
-                </div>
-                <div class= "col-sm-6 col-md-4 col-lg-3 image-container" >
-                <div class= "imagestyle">
-                    <img src= "./assets/images/room1.jpg" class= "img-fluid image-filteration image-zoom"/> 
-                </div>
-                </div>
-                <div class= "col-sm-6 col-md-4 col-lg-3 image-container" >
-                <div class= "imagestyle">
-                    <img src= "./assets/images/room1.jpg" class= "img-fluid image-filteration image-zoom"/> 
-                </div>
-                </div>
-                <div class= "col-sm-6 col-md-4 col-lg-3 image-container" >
-                <div class= "imagestyle">
-                    <img src= "./assets/images/room1.jpg" class= "img-fluid image-filteration image-zoom"/> 
-                </div>
+            </div>
+            <!-- here the image modal -->
+            <div class= "modal fade" id= "imagemodal" tabindex= "-1" role= "dialog" aria-labelledby= "myModalLabel" aria-hidden= "true">
+                <div class= "modal-dialog" data-dismiss= "modal">
+                    <div class= "modal-content">              
+                      <div class= "modal-body">
+                        <button type= "button" class= "close" data-dismiss= "modal">
+                            <span aria-hidden= "true">
+                                &times;
+                            </span>
+                            <span class= "sr-only">
+                                Close
+                            </span>
+                          </button>
+                          <img src= "" class= "imagepreview" id= "modal-image" style= "width: 100%;">
+                      </div> 
+                      <div class= "modal-footer">
+                          <div class= "col-xs-12">
+                               <p class= "text-center" id= "model-captions"></p>
+                          </div>
+                      </div>
+                    </div>
                 </div>
             </div>
-            
+           
         </div>
     </div>
 </body>
+    <script>
+        getData();
+    </script>
 </html>

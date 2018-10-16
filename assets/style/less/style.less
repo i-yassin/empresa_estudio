@@ -1,6 +1,7 @@
 .header {
     position: fixed;
     z-index: 1;
+    box-shadow: 6px 3px 6px #aaaaaa;
 }
 .body-container {
     position: relative;
@@ -39,11 +40,32 @@
     padding-top: 7px;
     padding-right: 7px !important;
     padding-left: 0px !important;
+    overflow: hidden;
+    cursor: pointer;
 }
 .imagestyle {
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
     overflow: hidden;
 }
 .image-zoom:hover {
-    transform: scale(1.2) !important;
+    transform: scale(1.05) !important;
+}
+.image-container:hover .image-capture {
+    transform: translate(0,13px) !important;
+    opacity: .6;
+}
+.image-capture {
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    right: 7px;
+    color: white;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    transform: translate(0, calc(100% + 13px));
+    transition: transform 0.2s ease-out;
+}
+.modal-footer {
+    justify-content: center !important;
 }
