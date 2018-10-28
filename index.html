@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Task</title>
-    <!-- Latest compiled and minified CSS -->
+    <title>index</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,14 +16,12 @@
     <script src="assets/js/ajaxRequest.js"></script>
     <script src="assets/js/modal_control.js"></script>
     <link rel="stylesheet" href="assets/style/css/style.css">
-
 </head>
-<body>
-    <!-- wesite contaiener -->
-    <div>
-        <div class= "container-fluid header">
+<body onload="checkFilteredData()">
+    <div class= "container-fluid root">
+        <div>
             <div class= "top-header">
-               <div class= "row" id= "upHeader">
+            <div class= "row" id= "upHeader">
                     <div id= "logo">
                         <h2 id= "textlogo">
                             E
@@ -34,19 +32,35 @@
                     </h3>
                 </div> 
             </div> 
-            <div class="row text-center buttom-header">
+            <div class= "row text-center buttom-header">
                 estudio
             </div>
-        </div>
-        <div class= "container-fluid body-container">
-            <div class= "row text-center text-lg-left rooms-container" id="where-image-appear">
-                <!-- here the image will appear -->
+            <div class= "filter-container">
+                <div class= "row text-center filter" data-toggle= "collapse" href= "#collapse1" style= "cursor: pointer;">
+                    Filter
+                </div>
+                <div id= "collapse1" class= "panel-collapse collapse row filter">
+                    <div style= "display: flex;justify-content: center;">
+                            <div class= "row" style= "margin: 8px; display: -webkit-box;">
+                                <select id= "selected-option" class="custom-select btn btn-default">
+                                    <option value= "0" selected> Id </option>
+                                    <option value= "1"> Style </option>
+                                </select>
+                                <input type= "text" class="form-control" placeholder= " Filter on " id= "filterd-for">
+                                <button type= "submit" class="btn btn-default" onclick= "filtering()">Submit</button>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
-            <!-- here the image modal -->
+        </div>
+        <div class= "body-container">
+            <div class= "row text-center text-lg-left rooms-container" id= "where-image-appear">
+            </div>
             <div class= "modal fade" id= "imagemodal" tabindex= "-1" role= "dialog" aria-labelledby= "myModalLabel" aria-hidden= "true">
                 <div class= "modal-dialog" data-dismiss= "modal">
                     <div class= "modal-content">              
-                      <div class= "modal-body">
+                        <div class= "modal-body">
                         <button type= "button" class= "close" data-dismiss= "modal">
                             <span aria-hidden= "true">
                                 &times;
@@ -54,22 +68,19 @@
                             <span class= "sr-only">
                                 Close
                             </span>
-                          </button>
-                          <img src= "" class= "imagepreview" id= "modal-image" style= "width: 100%;">
-                      </div> 
-                      <div class= "modal-footer">
-                          <div class= "col-xs-12">
-                               <p class= "text-center" id= "model-captions"></p>
-                          </div>
-                      </div>
+                            </button>
+                            <img src= "" class= "imagepreview" id= "modal-image" style= "width: 100%;">
+                        </div> 
+                        <div class= "modal-footer">
+                            <div class= "col-xs-12">
+                                <p class= "text-center" id= "model-captions"></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-           
+            
         </div>
-    </div>
+</div>
 </body>
-    <script>
-        getData();
-    </script>
 </html>
