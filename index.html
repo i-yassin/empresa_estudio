@@ -35,21 +35,20 @@
             <div class= "row text-center buttom-header">
                 estudio
             </div>
-            <div class= "filter-container">
-                <div class= "row text-center filter" data-toggle= "collapse" href= "#collapse1" style= "cursor: pointer;">
-                    Filter
-                </div>
-                <div id= "collapse1" class= "panel-collapse collapse row filter">
-                    <div style= "display: flex;justify-content: center;">
-                            <div class= "row" style= "margin: 8px; display: -webkit-box;">
-                                <select id= "selected-option" class="custom-select btn btn-default">
-                                    <option value= "0" selected> Id </option>
-                                    <option value= "1"> Style </option>
-                                </select>
-                                <input type= "text" class="form-control" placeholder= " Filter on " id= "filterd-for">
-                                <button type= "submit" class="btn btn-default" onclick= "validationData()">Submit</button>
-                            </div>
-                        
+            <div class= "row">
+                <div class= "filter-container container-fluid">
+                    <div class= " text-center filter" data-toggle= "collapse" href= "#collapse1" style= "cursor: pointer;">
+                        Filter
+                    </div>
+                    <div id= "collapse1" class= "panel-collapse collapse  filter justify-content: center;">
+                        <div class= "filter-option" style= "margin: 10px; display: flex; ">
+                            <select id= "selected-option" class="custom-select btn btn-default">
+                                <option value= "0" selected> Id </option>
+                                <option value= "1"> Style </option>
+                            </select>
+                            <input type= "text" class="form-control" placeholder= " Filter on " id= "filterd-for">
+                            <button type= "submit" class="btn btn-default" onclick= "validationData()">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
