@@ -30,7 +30,7 @@ function getData() {//function to display all data from server
          }
   });
 }
-function filtering(){// function control the validation of the search bar and then call function that show data
+function validationData(){// function control the validation for the search bar and then call function to show data
     var selectedBy= $("#selected-option").val();
     var fillterdBy= $("#filterd-for").val();
     var textWillAddedToURL= '?searched-text=';
@@ -40,7 +40,7 @@ function filtering(){// function control the validation of the search bar and th
                 let data= parseInt($("#filterd-for").val()) || -1;
                 if(data !== -1) {
                     FilterData(data, 'id');
-                    textWillAddedToURL+= data+"&type=id";
+                    textWillAddedToURL+= data+ "&type=id";
                     history.pushState({},"",textWillAddedToURL);
                     break;
                 }
@@ -51,7 +51,7 @@ function filtering(){// function control the validation of the search bar and th
         case '1':
             {
                 FilterData(fillterdBy, 'style');
-                textWillAddedToURL+= fillterdBy+"&type=style";
+                textWillAddedToURL+= fillterdBy+ "&type=style";
                 history.pushState({},"",textWillAddedToURL);
                 break;
             }
